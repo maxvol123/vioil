@@ -626,6 +626,85 @@ footer{
     .language{
         margin-left: 0;
     }
+    .ourpluss__elements__element{
+        flex-basis: auto;
+        width: 350px;
+    }
+    .ourpluss__elements{
+        flex-direction: column;
+        margin: 0 auto;
+        padding-right: 50px;
+    }
+    .info__textside{
+        width: 400px;
+        height: 1500px;
+    }
+    .header__logo>img{
+        display: flex;
+        height: 70px;
+    }
+    .text__green{
+        font-size: 20px;
+        padding: 10px 10px;
+        padding-bottom: 50px;
+        text-align: center;
+
+    }
+    .text__green>span{
+        font-size: 27px;
+    }
+    .firstpage__main{
+
+    }
+    .text__white{
+        margin-left: 30px;
+    }
+    .main__photo>img{
+        height: 300px;
+    }
+    .history__main__photo>img{
+        height: 250px;
+    }
+    .history__text__title{
+        font-size: 25px;
+    }
+    .history__text__text{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .elements__text{
+        font-size: 15px;
+    }
+    .elements__text>div{
+        max-width: 300px;
+    }
+    .main__elements{
+        padding-left: -500px;
+    }
+    .history{
+        margin-right: 70px;
+    }
+    .info{
+        width: 300px;
+    }
+    .info__textside {
+        margin-left: -20px;
+        width: 350px;
+        
+    }
+    .contact__input{
+        max-width: 300px;
+        padding-right: 100px;
+    }
+    .header__title{
+        font-size: 20px;
+    }
+    .header__subtitle{
+        font-size: 17px;
+    }
+    .contact__contact{
+        padding-right: 100px;
+    }
 }
 
 html{
