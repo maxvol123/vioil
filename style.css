@@ -603,6 +603,10 @@ footer{
   }
 }
 @media (max-width: 850px) {
+    .info__textside__photo{
+        margin-top: 20px;
+    }
+
     header{
         flex-direction: column;
     }
@@ -680,6 +684,7 @@ footer{
     }
     .main__elements{
         padding-left: -500px;
+        width: 350px;
     }
     .history{
         margin-right: 70px;
@@ -690,7 +695,7 @@ footer{
     .info__textside {
         margin-left: -20px;
         width: 350px;
-        
+        height: auto;
     }
     .contact__input{
         max-width: 300px;
