@@ -7,6 +7,9 @@
 .elements__image__two{
     display: none;
 }
+#info::after{
+    content: "▼";
+}
 body{
     font-family: 'ProximaNova', Arial, sans-serif;
     display: grid;
@@ -725,6 +728,16 @@ footer{
     }
     .text__subtitle{
         font-size: 15px;
+    }
+    .info__textside__photo{
+        max-width: 300px;
+        overflow-x: hidden;
+    }
+    .text__4{
+        margin-top: 15px;
+    }
+    .text__5{
+        margin-top: 20px;
     }
 }
 
