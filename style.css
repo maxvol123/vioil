@@ -1085,20 +1085,17 @@ footer{
         max-width: 300px;
         overflow-x: hidden;
     }
-    .text__4{
-        margin-top: 12px;
-    }
-    .text__5{
-        margin-top: 15px;
-    }
-    .text__6{
-        margin-top: 15px;
-    }
     .main__photo{
         width: 100%;
     }
     .main__photo>img{
         width: 100vw;
+    }
+    .text__6{
+        margin-top: 15px;
+    }
+    .text__5{
+        margin-top: 28px;
     }
 }
 
