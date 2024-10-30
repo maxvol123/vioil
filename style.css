@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    -webkit-appearance: none;
 }
 .elements__image__two{
     display: none;
@@ -657,8 +658,8 @@ footer{
     .text__green>span{
         font-size: 27px;
     }
-    .firstpage__main{
-
+    .firstpage{
+        width: 100vw;
     }
     .text__white{
         margin-left: 30px;
@@ -715,6 +716,15 @@ footer{
     }
     .text__1{
         margin-top: -20px;
+    }
+    .element__text{
+        font-size: 14px
+    }
+    .text__title{
+        font-size: 14px;
+    }
+    .text__subtitle{
+        font-size: 15px;
     }
 }
 
