@@ -370,9 +370,9 @@ body{
     font-weight: 400;
     overflow-x: hidden;
     width: 100vw;
+    padding-left: 50px;
 }
 .firstpage{
-    min-height: 100vh;
     width: 1300px;
     padding-left: 200px;
     padding-right: 100px;
@@ -603,7 +603,6 @@ font-weight: 400;
 .info {
     width: 1160px;
 margin-top: 100px;
-padding-left: 200px;
     padding-right: 100px;
     margin: 0 auto;
 }
@@ -671,7 +670,7 @@ padding-left: 200px;
 /* Contact */
 
 .contact {
-    width: 100vw;
+    width: 106vw;
     background: no-repeat url(/image/phone.png);
     background-size: 100%;
     background-position: 0px 300px;
@@ -679,12 +678,13 @@ padding-left: 200px;
 }
 .contact__section{
     width: 1200px;
-    margin-left: 50px;
-    margin-top: 100px;
     display: flex;
     justify-content: center;
     padding-left: 200px;
     padding-right: 100px;
+    margin: 0 auto;
+    margin-top: 100px;
+
 }
 .contact__input {
     width: 450px;
@@ -701,9 +701,14 @@ padding-left: 200px;
 
 }
 .input__form>input{
-    padding: 10px 5px;
+    padding: 15px 10px;
     margin-bottom: 15px;
+    border: 1px black solid;
 }
+.input__form>input:focus{
+    outline: none;
+}
+
 .input__conf {
 
 }
@@ -739,6 +744,7 @@ a{
     width: 150px;
     margin: 0 auto;
     cursor: pointer;
+    border: none;
 }
 
 
@@ -959,6 +965,9 @@ footer{
   }
 }
 @media (max-width: 850px) {
+    body{
+        padding: 0;
+    }
     .info__textside__photo{
         margin-top: 20px;
     }
@@ -989,6 +998,11 @@ footer{
     .ourpluss__elements__element{
         flex-basis: auto;
         width: 350px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+    .element__img>img{
+        height: 71px;
     }
     .ourpluss__elements{
         flex-direction: column;
@@ -1086,10 +1100,14 @@ footer{
         overflow-x: hidden;
     }
     .main__photo{
-        width: 100%;
+        width: 100vw;
+        max-height: 300px;
+        overflow-y: hidden;
     }
     .main__photo>img{
-        width: 100vw;
+        width: 100vw; /* Гибкость – наше всё */
+        height: auto; /* Доверьтесь автоматике */
+        object-fit: contain; /* Исключаем искажения пропорций */
     }
     .text__6{
         margin-top: 15px;
@@ -1097,8 +1115,88 @@ footer{
     .text__5{
         margin-top: 28px;
     }
+    .info__textside__text__title{
+        font-size: 16px;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        font-weight: 700;
+        padding-top: 10px;
+    }
+    .info__textside__text__text{
+        font-size: 15px;
+    }
+    .info__textside__text{
+        padding: 0 5px;
+    }
+    .header__nav{
+        display: none;
+    }
+    .header__logo{
+        display: none;
+    }
+
+    
+    label{
+        display:flex;
+         flex-direction:column;
+         width:70px;
+         cursor:pointer;
+       }
+       
+       label span{
+         background: black;
+         border-radius:10px;
+         height:7px;
+         margin: 7px 0;
+         transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+       
+       }
+       span:nth-of-type(1){
+         width:50%; 
+       }
+       
+       span:nth-of-type(2){
+         width:100%;
+       }
+       
+       
+       span:nth-of-type(3){
+         width:75%;
+        
+       }
+       
+       
+       input[type="checkbox"]{
+         display:none;
+       }
+       
+       
+       input[type="checkbox"]:checked ~ span:nth-of-type(1){
+         transform-origin:bottom;
+         transform:rotatez(45deg) translate(8px,0px)
+       }
+       
+       
+       input[type="checkbox"]:checked ~ span:nth-of-type(2){
+         
+         transform-origin:top;
+         transform:rotatez(-45deg)
+       }
+       
+       
+       input[type="checkbox"]:checked ~ span:nth-of-type(3){
+         
+         transform-origin:bottom;
+         width:50%;
+         transform: translate(30px,-11px) rotatez(45deg);
+       
+       }
 }
 
 html{
     overflow-x: hidden;
 }
+
+
+   
