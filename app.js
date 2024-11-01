@@ -33,3 +33,36 @@ checkbox.addEventListener("change", function() {
         toggleElement2.style.display = "none";
     }
 });
+
+function scrollToElement(elementClass) {
+    
+    
+    const element = document.querySelector(`.${elementClass}`);
+        element.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+}
+const scrollToTopButton = document.getElementById("scrollToTopButton");
+
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 300) {
+        scrollToTopButton.style.display = "flex";
+    } else {
+        scrollToTopButton.style.display = "none";
+    }
+});
+
+scrollToTopButton.addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+    
+    // Hide the button permanently after clicking
+    scrollToTopButton.style.display = "none";
+    
+    // Remove the scroll event listener after first use
+    window.removeEventListener("scroll", arguments.callee);
+});
+

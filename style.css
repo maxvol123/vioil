@@ -374,8 +374,8 @@ body{
 }
 .firstpage{
     width: 1300px;
-    padding-left: 200px;
-    padding-right: 100px;
+    margin: 0 auto;
+    padding-right: 200px;
 }
 header{
     display: flex;
@@ -400,6 +400,9 @@ header{
     width: 30%;
     margin-top: 30px;
     margin-right: 100px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .nav__element {
 
@@ -430,7 +433,7 @@ header{
     padding: 25px 100px;
     text-wrap: wrap;
     z-index: 0;
-    line-height: 27px;
+    line-height: 35px;
 }
 .text__green>span{
     font-size: 42px;
@@ -474,6 +477,7 @@ li {
 /* ourpluss part */
 
 .ourpluss {
+    margin: 0 auto;
     display: grid;
     justify-items: center;
     width: 1300px;
@@ -481,8 +485,8 @@ li {
     background: no-repeat;
     background-position-x: 100%;
     background-image: url(/image/Vector-2.svg\ fill.png);
-    padding-left: 200px;
-    padding-right: 100px;
+
+    margin-top: 30px;
 }
 .ourpluss__header {
     display: flex;
@@ -534,8 +538,7 @@ font-weight: 400;
 
 .history {
     width: 1400px;
-    padding-left: 200px;
-    padding-right: 100px;
+    margin: 0 auto;
 }
 .history__text {
     text-align: center;
@@ -767,9 +770,17 @@ footer{
     display: flex;
     justify-content: space-around;
     padding-top: 20px;
+    
 }
 .footer__nav__element {
     margin-left: 20px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.footer__nav__element>p:hover {
+    color: #ffc947;
+    cursor: pointer;
 }
 .footer__nav__phone {
     margin-left: 10px;
@@ -858,6 +869,7 @@ footer{
   }
   .ourpluss{
     overflow-x: hidden;
+
   }
   .main__photo{
     margin-bottom: 50px;
@@ -1000,6 +1012,7 @@ footer{
         flex-basis: auto;
         width: 350px;
         height: 70px;
+        margin: 0 auto;
         margin-bottom: 20px;
     }
     .element__img>img{
@@ -1008,7 +1021,7 @@ footer{
     .ourpluss__elements{
         flex-direction: column;
         margin: 0 auto;
-        padding-right: 50px;
+        width: 100vw;
     }
     .info__textside{
         width: 400px;
@@ -1025,6 +1038,7 @@ footer{
         text-align: center;
         font-weight: 400;
         padding-top: 20px;
+        line-height: 27px;
     }
     .text__green>span{
         font-size: 27px;
@@ -1078,6 +1092,8 @@ footer{
     }
     .ourpluss__header{
         margin-right: 75px;
+        margin: 0 auto;
+        margin-bottom: 20px;
     }
     .header__subtitle{
         font-size: 20px;
@@ -1216,12 +1232,38 @@ footer{
        .contact__contact{
         text-align: center;
        }
+       .history{
+        margin: 0;
+       }
        
 }
 
 html{
     overflow-x: hidden;
 }
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hidden initially */
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s;
+}
+
+.scroll-to-top:hover {
+    background-color: #555;
+}
+
 
 
    
